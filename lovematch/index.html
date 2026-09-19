@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>❤️ F.L.A.M.E.S. LoveMatch</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="wrap"><header><button id="home">❤️ F.L.A.M.E.S. LoveMatch</button><button id="clear">Clear My Data</button></header><main>
+<section id="landing" class="screen active"><div class="hero"><small>FUN • PERSONAL • SHAREABLE</small><h1>❤️ F L A M E S ❤️ LoveMatch</h1><p>Discover your fun compatibility profile with your partner, crush, or special someone.</p><button class="primary" id="start">Start LoveMatch ✨</button></div><div class="notice"><b>Entertainment & self-reflection</b><br>LoveMatch is designed for entertainment and self-reflection. Zodiac signs, Chinese zodiac compatibility, and internet personality archetypes are not scientifically validated measures of relationship compatibility or personality.</div><h2>How It Works</h2><div class="cards three"><article>01<h3>Build two profiles</h3><p>Add names, countries and birthdays.</p></article><article>02<h3>Answer together</h3><p>Each person answers independently.</p></article><article>03<h3>Explore your match</h3><p>See transparent category scores and insights.</p></article></div><div class="cards four"><article>♈ Zodiac<br><small>Playful sign pairing</small></article><article>🐉 Chinese Zodiac<br><small>Animal profile pairing</small></article><article>🔥 Personality<br><small>Internet-culture archetypes</small></article><article>💞 Compatibility<br><small>Answers drive the score</small></article></div><p class="privacy">🔒 Everything stays in this browser. No server, API or account.</p></section>
+<section id="profiles" class="screen"><small>STEP 1</small><h2>Meet the two people</h2><form id="form" class="people"><article><b>PERSON A</b><h3>Person A</h3><label>Name<input id="an" maxlength="40" required></label><label>Country<select id="ac" required></select></label><label>Birthday<input id="ad" type="date" required></label><div id="af" class="fact">Enter a birthday.</div></article><article><b>PERSON B</b><h3>Person B</h3><label>Name<input id="bn" maxlength="40" required></label><label>Country<select id="bc" required></select></label><label>Birthday<input id="bd" type="date" required></label><div id="bf" class="fact">Enter a birthday.</div></article><button class="primary">Continue to Personality ✨</button></form></section>
+<section id="personality" class="screen"><div class="qhead"><div><small>STEP 2 • PERSONALITY</small><h2>Discover your archetype</h2><p>Fun Internet-Culture Personality Archetypes</p></div><b id="pp"></b></div><div id="tabs"></div><div id="pq" class="quiz"></div></section>
+<section id="relationship" class="screen"><div class="qhead"><div><small>STEP 3 • RELATIONSHIP</small><h2>Your compatibility profile</h2><p id="rp"></p></div><b id="rr"></b></div><div id="rq" class="quiz"></div></section>
+<section id="calc" class="screen center"><div class="heart">❤️</div><h2 id="ct">Analyzing your answers...</h2><p>Everything is being calculated offline.</p></section>
+<section id="donation" class="screen donationScreen">
+  <div class="donationCard">
+    <div class="donationTop">
+      <div class="donationIcon">💗</div>
+      <span class="optionalBadge">OPTIONAL SUPPORT</span>
+    </div>
+    <small>YOUR LOVEMATCH IS READY</small>
+    <h2>Want to support LoveMatch?</h2>
+    <p class="donationLead">If you enjoyed the experience, you can leave a small GCash tip. Your result is always free and never depends on donating.</p>
+
+    <div class="donationAmount">
+      <span>Suggested tip</span>
+      <b>₱49</b>
+    </div>
+
+    <div class="donationActions">
+      <button class="primary" id="donateYes">💗 Yes, I'd like to support</button>
+      <button class="secondary" id="donateSkip">Skip &amp; See My Result →</button>
+    </div>
+
+    <div id="donationPanel" class="donationPanel" hidden>
+      <div class="thankYou">Thank you for supporting LoveMatch! ❤️</div>
+      <p>Scan the QR code with GCash, or send directly to the number below.</p>
+
+      <div class="gcashBox">
+        <div class="gcashBrand">GCash</div>
+        <div class="qrFrame">
+          <img src="assets/gcash-qr.jpg" alt="GCash donation QR code">
+        </div>
+        <p class="micro">Scan this QR code using the GCash app.</p>
+
+        <div class="gcashNumberLabel">GCash number</div>
+        <div class="numberRow">
+          <strong id="gcashNumber">09380536208</strong>
+          <button class="copyBtn" id="copyGcash" type="button">Copy</button>
+        </div>
+        <p class="micro">You can also send your chosen amount directly to this number.</p>
+      </div>
+
+      <div class="donationNote">
+        <b>On mobile?</b> If scanning the QR from the same phone isn't convenient, use the GCash number above.
+      </div>
+
+      <button class="primary wide" id="continueResult">I’m Done — Show My Result ✨</button>
+    </div>
+
+    <p class="micro donationFoot">Donation is completely optional. LoveMatch does not verify or require payment.</p>
+  </div>
+</section>
+<section id="results" class="screen"><div class="resultHero"><small>❤️ YOUR LOVEMATCH RESULT</small><h2 id="names"></h2><div class="score" id="score">0%</div><h3 id="headline"></h3><p>This is a fun compatibility interpretation based on your answers and selected profile information.</p></div><div class="actions"><button id="share">📤 Share My LoveMatch</button><button id="save">📝 Save Result</button><button id="print">🖨️ Print</button></div><div id="summary" class="cards two"></div><div id="scores" class="cards three"></div><div class="cards two"><article><h3>💪 Strengths</h3><div id="strengths"></div></article><article><h3>🌱 Areas to explore together</h3><div id="friction"></div></article></div><article class="panel"><h3>💡 Personalized recommendations</h3><div id="recs"></div></article><div class="cards two"><article id="zpanel"></article><article id="cpanel"></article></div><article id="ppanel" class="panel"></article><div class="notice">LoveMatch is entertainment and self-reflection, not a scientific prediction of relationship success or failure.</div><button class="primary wide" id="new">Start New LoveMatch</button></section>
+</main></div><div id="toast"></div>
+<script src="data/countries.js"></script><script src="data/zodiac.js"></script><script src="data/chinese-zodiac.js"></script><script src="data/personality.js"></script><script src="data/questions.js"></script><script src="app.js"></script></body></html>

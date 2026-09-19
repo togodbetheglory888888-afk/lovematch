@@ -1,0 +1,1 @@
+window.COUNTRIES=[["PH","Philippines","🇵🇭"],["US","United States","🇺🇸"],["CA","Canada","🇨🇦"],["GB","United Kingdom","🇬🇧"],["AU","Australia","🇦🇺"],["JP","Japan","🇯🇵"],["KR","South Korea","🇰🇷"],["SG","Singapore","🇸🇬"],["MY","Malaysia","🇲🇾"],["TH","Thailand","🇹🇭"],["ID","Indonesia","🇮🇩"],["IN","India","🇮🇳"],["OTHER","Other","🌍"]];
